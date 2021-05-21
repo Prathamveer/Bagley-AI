@@ -110,6 +110,10 @@ def Take_query():
             webbrowser.open("https://web.whatsapp.com/")
             continue
         
+        elif "open gdb online" in query:
+            speak("Opening GDB Online")
+            webbrowser.open("https://www.onlinegdb.com/")
+        
         elif "open online computer language" in query:
             speak("Opening Replit")
             webbrowser.open("https://replit.com/~")
@@ -149,6 +153,11 @@ def Take_query():
             webbrowser.open("https://www.youtube.com/watch?v=27DE26j5n8w&list=RDCMUCXuqSBlHAE6Xw-yeJA0Tunw")
             continue
         
+        elif "open spotify" in query:
+            speak("Opening Spotify on your webbrowser")
+            webbrowser.open("open.spotify.com")
+            continue
+        
         elif "open spotify developer" in query:
             speak("Opening Spotify Developers ")
             webbrowser.open("https://developer.spotify.com/dashboard/applications")
@@ -181,12 +190,8 @@ def Take_query():
             speak("Bye. see you later")
             exit()
             
-        elif "thank you" in query:
+        elif "thank you" or "thanks" in query:
             speak("My pleasure!")
-            exit()
-        
-        elif "thanks" in query:
-            speak("My Pleasure!")
             exit()
         
         elif "stop" in query:
