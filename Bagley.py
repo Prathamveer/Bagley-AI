@@ -181,8 +181,12 @@ def Take_query():
             speak("Bye. see you later")
             exit()
             
-        elif "thank you" or "thanks" in query:
+        elif "thank you" in query:
             speak("My pleasure!")
+            exit()
+        
+        elif "thanks" in query:
+            speak("My Pleasure!")
             exit()
         
         elif "stop" in query:
